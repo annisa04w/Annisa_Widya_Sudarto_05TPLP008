@@ -1,274 +1,232 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alex Brush:wght@400;700&display=swap" rel="stylesheet">
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    </head>
-
-    <body>
-        <main class="grid grid-cols-12 gap-0">
-            <div class="flex h-screen flex-col justify-between border-e bg-white col-start-1 col-end-3">
-                <div class="px-4 py-6">
-    
-                    <span class="grid h-10 w-32 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600">
-                        Logo
-                    </span>
-    
-                    <ul class="mt-6 space-y-1">
-                        <li>
-                            <a href="./index.html" class="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700">
-                                Dashboard
-                            </a>
-                        </li>
-    
-                        <li>
-    
-                            <details class="group [&_summary::-webkit-details-marker]:hidden">
-    
-                                <summary
-                                    class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                    <span class="text-sm font-medium"> Menu Karyawan</span>
-    
-                                    <span class="shrink-0 transition duration-300 group-open:-rotate-180">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
-                                            fill="currentColor">
-                                            <path fill-rule="evenodd"
-                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                    </span>
-                                </summary>
-    
-                                <ul class="mt-2 space-y-1 px-4">
-                                    <li>
-                                        <a href="./karyawan.html"
-                                            class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                            Karyawan
-                                        </a>
-                                    </li>
-    
-                                    <li>
-                                        <a href="./Jabatan.html"
-                                            class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                            Jabatan
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="./Divisi.html"
-                                            class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                            Divisi
-                                        </a>
-                                    </li>
-                                </ul>
-                            </details>
-                        </li>
-    
-    
-                        <details class="group [&_summary::-webkit-details-marker]:hidden">
-                            <summary
-                                class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                <span class="text-sm font-medium"> Menu Absensi </span>
-    
-                                <span class="shrink-0 transition duration-300 group-open:-rotate-180">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </span>
-                            </summary>
-    
-                            <ul class="mt-2 space-y-1 px-4">
-                                <li>
-                                    <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                        Absensi
-                                    </a>
-                                </li>
-    
-                                <li>
-                                    <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                        Izin
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                        Lembur
-                                    </a>
-                                </li>
-    
-                            </ul>
-                        </details>
-                        <details class="group [&_summary::-webkit-details-marker]:hidden">
-                            <summary
-                                class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                <span class="text-sm font-medium"> Menu Penggajian </span>
-    
-                                <span class="shrink-0 transition duration-300 group-open:-rotate-180">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </span>
-                            </summary>
-    
-                            <ul class="mt-2 space-y-1 px-4">
-                                <li>
-                                    <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                        Slip Gaji
-                                    </a>
-                                </li>
-    
-                                <li>
-                                    <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                        Cetak Slip Gaji
-                                    </a>
-                                </li>
-    
-    
-                                <li>
-                                    <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                        Izin
-                                    </a>
-                                </li>
-                            </ul>
-                        </details>
-                        <details class="group [&_summary::-webkit-details-marker]:hidden">
-                            <summary
-                                class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                <span class="text-sm font-medium"> Menu Laporan </span>
-    
-                                <span class="shrink-0 transition duration-300 group-open:-rotate-180">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </span>
-                            </summary>
-    
-                            <ul class="mt-2 space-y-1 px-4">
-                                <li>
-                                    <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                        Cetak Laporan
-                                    </a>
-                                </li>
-    
-                            </ul>
-                        </details>
-                        <details class="group [&_summary::-webkit-details-marker]:hidden">
-                            <summary
-                                class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                <span class="text-sm font-medium"> Menu Admin </span>
-    
-                                <span class="shrink-0 transition duration-300 group-open:-rotate-180">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
-                                        fill="currentColor">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                </span>
-                            </summary>
-    
-                            <ul class="mt-2 space-y-1 px-4">
-                                <li>
-                                    <a href="#"
-                                        class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                        Pengguna
-                                    </a>
-                                </li>
-                            </ul>
-                        </details>
-    
-                </div>
-    
-            </div>
-
-            <section class="col-start-3 col-end-13">
-
-                <!--
-    Heads up! 👋
-
-    This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
-    -->
-                    <div class="bg-pink-500 h-[20vh] px-10 flex items-center">
-                        <h1 class="text-2xl text-white font-bold mb-4">
-                        Dashboard
-                        </h1>
-                    </div>
-
+<body>
+    <main class="grid grid-cols-12 gap-0 h-screen">
+        <!-- Sidebar -->
+        <div id="sidebar" class="flex flex-col justify-between border-r bg-white col-span-2">
+            <div class="px-4 py-6 space-y-6">
                 
-                <div class="overflow-x-auto">
-                    <table class="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
-                        <thead class="ltr:text-left rtl:text-right">
+                <!-- Header Section -->
+                <div class="bg-pink-500 sticky top-0 h-16 flex items-center justify-center rounded-md shadow-md px-2">
+                    <h3 class="text-lg text-white font-bold" style="font-family: 'Alex Brush', sans-serif;">Annisa Florist</h3>
+                    <button id="toggle-sidebar" class="text-white text-1xl focus:outline-none ml-2">
+                        <i class="bx bx-menu"></i> <!-- Icon from Boxicons -->
+                    </button>
+                </div>
+                
+
+                <!-- User Info Section -->
+                <div class="flex items-center gap-3 px-3 py-2 bg-gray-100 rounded-md shadow-sm">
+                    <img src="gambar/nisa.jpg" alt="Profile Picture" class="w-12 h-8 rounded-full object-cover"/>
+                    <div>
+                        <p class="text-xs text-gray-600">Welcome, Annisa Widya Sudarto</p>
+                        <p class="font-semibold text-gray-800">Administrator</p>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <ul class="mt-6 space-y-1">
+                    <li>
+                        <a href="./index.html" class="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700">
+                            Dashboard
+                        </a>
+                    </li>
+                    <!-- Menu Karyawan -->
+                    <li>
+                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+                            <summary
+                                class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                <span class="text-sm font-medium"> Menu Karyawan</span>
+                                <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                                    <i class="bx bx-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <ul class="mt-2 space-y-1 px-4">
+                                <li><a href="./karyawan.html" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Karyawan</a></li>
+                                <li><a href="./Jabatan.html" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Jabatan</a></li>
+                                <li><a href="./Divisi.html" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Divisi</a></li>
+                            </ul>
+                        </details>
+                    </li>
+
+                    <!-- Menu Absensi -->
+                    <li>
+                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                <span class="text-sm font-medium"> Menu Absensi </span>
+                                <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                                    <i class="bx bx-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <ul class="mt-2 space-y-1 px-4">
+                                <li><a href="./Absensi.html" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Absensi</a></li>
+                                <li><a href="./Izin.html" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Izin</a></li>
+                                <li><a href="./Lembur.html" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Lembur</a></li>
+                            </ul>
+                        </details>
+                    </li>
+
+                    <!-- Menu Penggajian -->
+                    <li>
+                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                <span class="text-sm font-medium"> Menu Penggajian </span>
+                                <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                                    <i class="bx bx-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <ul class="mt-2 space-y-1 px-4">
+                                <li><a href="#" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Slip Gaji</a></li>
+                                <li><a href="#" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Cetak Slip Gaji</a></li>
+                
+                            </ul>
+                        </details>
+                    </li>
+
+                    <!-- Menu Laporan -->
+                    <li>
+                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                <span class="text-sm font-medium"> Menu Laporan </span>
+                                <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                                    <i class="bx bx-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <ul class="mt-2 space-y-1 px-4">
+                                <li><a href="#" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Cetak Laporan</a></li>
+                            </ul>
+                        </details>
+                    </li>
+
+                    <!-- Menu Admin -->
+                    <li>
+                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                <span class="text-sm font-medium"> Menu Admin </span>
+                                <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                                    <i class="bx bx-chevron-down"></i>
+                                </span>
+                            </summary>
+                            <ul class="mt-2 space-y-1 px-4">
+                                <li><a href="#" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Pengguna</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+            <button class="bg-pink-500 w-[100%] px-4 py-2 mt-5">Logout</button>
+        </div>
+        
+
+        <!-- Main Content Section -->
+        <section class="col-start-3 col-end-13">
+            <div class="bg-pink-500 h-[20vh] px-10 flex items-center">
+                <h1 class="text-2xl text-white font-bold">Dashboard</h1>
+            </div>
+            <section class="bg-white shadow-lg rounded-md -mt-5 mx-10">
+                <div class="flex justify-between p-3 items-center">
+                    <h3 class="text-2xl text-black font-semibold">
+                        Data Karyawan
+                    </h3>
+                    <a href="formkaryawan.html">
+                        <button class="bg-pink-500 p-2 rounded-full text-white transition-transform duration-300 transform hover:scale-105 hover:shadow-lg active:scale-95">
+                            + Tambah Karyawan
+                        </button>
+                    </a>
+                </div>
+                <div class="border-b"></div>
+                <div class="relative overflow-x-auto">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
                             <tr>
-                                <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Name</th>
-                                <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Date of Birth</th>
-                                <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Role</th>
-                                <th class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Salary</th>
-                                <th class="px-4 py-2"></th>
+                                <th scope="col" class="px-6 py-3">No</th>
+                                <th scope="col" class="px-6 py-3">Kode</th>
+                                <th scope="col" class="px-6 py-3">Nama</th>
+                                <th scope="col" class="px-6 py-3">Email</th>
+                                <th scope="col" class="px-6 py-3">Alamat</th>
+                                <th scope="col" class="px-6 py-3">Jabatan</th>
+                                <th scope="col" class="px-6 py-3">Aksi</th>
                             </tr>
                         </thead>
-
-                        <tbody class="divide-y divide-gray-200">
-                            <tr>
-                                <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">John Doe</td>
-                                <td class="whitespace-nowrap px-4 py-2 text-gray-700">24/05/1995</td>
-                                <td class="whitespace-nowrap px-4 py-2 text-gray-700">Web Developer</td>
-                                <td class="whitespace-nowrap px-4 py-2 text-gray-700">$120,000</td>
-                                <td class="whitespace-nowrap px-4 py-2">
-                                    <a href="#"
-                                        class="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700">
-                                        View
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Jane Doe</td>
-                                <td class="whitespace-nowrap px-4 py-2 text-gray-700">04/11/1980</td>
-                                <td class="whitespace-nowrap px-4 py-2 text-gray-700">Web Designer</td>
-                                <td class="whitespace-nowrap px-4 py-2 text-gray-700">$100,000</td>
-                                <td class="whitespace-nowrap px-4 py-2">
-                                    <a href="#"
-                                        class="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700">
-                                        View
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="whitespace-nowrap px-4 py-2 font-medium text-gray-900">Gary Barlow</td>
-                                <td class="whitespace-nowrap px-4 py-2 text-gray-700">24/05/1995</td>
-                                <td class="whitespace-nowrap px-4 py-2 text-gray-700">Singer</td>
-                                <td class="whitespace-nowrap px-4 py-2 text-gray-700">$20,000</td>
-                                <td class="whitespace-nowrap px-4 py-2">
-                                    <a href="#"
-                                        class="inline-block rounded bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700">
-                                        View
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
+                        <tbody id="tbody"></tbody>
                     </table>
                 </div>
             </section>
+        </section>
         </main>
-    </body>
-
-    </html>
+        
+        <script type="text/javascript">
+            const datas = [
+                { id: "KAR007", nama: "Zara Andromeda", email: "zara@gmail.com", alamat: "Pamulang", jabatan: "Creative Director" },
+                { id: "KAR008", nama: "Rafael Navarro", email: "rafael@gmail.com", alamat: "Bekasi", jabatan: "Marketing Specialist" },
+                { id: "KAR009", nama: "Luna Callista", email: "luna@gmail.com", alamat: "Kemang", jabatan: "Data Analyst" },
+                { id: "KAR010", nama: "Cassandra Reyes", email: "cassandra@gmail.com", alamat: "Rawabelong", jabatan: "Project Manager" },
+                { id: "KAR011", nama: "Dante Aurelius", email: "dante@gmail.com", alamat: "Lebak Bulus", jabatan: "Operations Manager" },
+                { id: "KAR012", nama: "Serena Vesper", email: "serena@gmail.com", alamat: "Pondok Indah", jabatan: "UX Designer" },
+            ];
+        
+            function renderTableKaryawan() {
+                const tableBody = document.getElementById("tbody");
+                tableBody.innerHTML = ""; // Clear the table body
+        
+                datas.forEach((data, idx) => {
+                    const row = `
+                        <tr class="bg-white border-b">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                ${idx + 1}
+                            </th>
+                            <td class="px-6 py-4">${data.id}</td>
+                            <td class="px-6 py-4">${data.nama}</td>
+                            <td class="px-6 py-4">${data.email}</td>
+                            <td class="px-6 py-4">${data.alamat}</td>
+                            <td class="px-6 py-4">${data.jabatan}</td>
+                            <td class="px-6 py-4 flex space-x-2">
+                                <button class="bg-green-400 p-2 text-white rounded-md transition-transform duration-300 transform hover:scale-105 active:scale-95 hover:shadow-lg" onclick="updateKaryawan(${idx})">
+                                    Update
+                                </button>
+                                <button class="bg-red-400 p-2 text-white rounded-md transition-transform duration-300 transform hover:scale-105 active:scale-95 hover:shadow-lg" onclick="deleteKaryawan(${idx})">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                    `;
+                    tableBody.innerHTML += row;
+                });
+            }
+        
+            function updateKaryawan(index) {
+                const data = datas[index];
+                const newNama = prompt("Masukkan nama baru:", data.nama);
+                const newEmail = prompt("Masukkan email baru:", data.email);
+                const newAlamat = prompt("Masukkan alamat baru:", data.alamat);
+                const newJabatan = prompt("Masukkan jabatan baru:", data.jabatan);
+        
+                if (newNama && newEmail && newAlamat && newJabatan) {
+                    datas[index] = { ...data, nama: newNama, email: newEmail, alamat: newAlamat, jabatan: newJabatan };
+                    renderTableKaryawan(); // Re-render the table to show updated data
+                } else {
+                    alert("Semua field harus diisi untuk pembaruan.");
+                }
+            }
+        
+            function deleteKaryawan(index) {
+                if (confirm("Apakah Anda yakin ingin menghapus karyawan ini?")) {
+                    datas.splice(index, 1); // Remove the employee from the array
+                    renderTableKaryawan(); // Re-render the table to reflect changes
+                }
+            }
+        
+            renderTableKaryawan();
+        </script>
+        
+</body>
+</html>

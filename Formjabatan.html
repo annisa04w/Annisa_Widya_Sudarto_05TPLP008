@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Alex Brush:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="grid grid-cols-12 gap-0 h-screen">
+
+        <!-- Sidebar -->
+        <div class="flex flex-col justify-between border-r bg-white col-span-2">
+            <div class="px-4 py-6 space-y-6">
+                
+                 <!-- Header Section -->
+                <div class="bg-pink-500 sticky top-0 h-16 flex items-center justify-center rounded-md shadow-md px-2">
+                    <h3 class="text-lg text-white font-bold" style="font-family: 'Alex Brush', sans-serif;">Annisa Florist</h3>
+                    <button id="toggle-sidebar" class="text-white text-1xl focus:outline-none ml-2">
+                        <i class="bx bx-menu"></i> <!-- Icon from Boxicons -->
+                    </button>
+                </div>
+                
+                <!-- User Info Section -->
+                <div class="flex items-center gap-3 px-3 py-2 bg-gray-100 rounded-md shadow-sm">
+                    <img src="gambar/nisa.jpg" alt="Profile Picture" class="w-12 h-8 rounded-full object-cover"/>
+                    <div>
+                        <p class="text-xs text-gray-600">Welcome, Annisa Widya Sudarto</p>
+                        <p class="font-semibold text-gray-800">Administrator</p>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <ul class="mt-6 space-y-1">
+                    <!-- Dashboard Link -->
+                    <li>
+                        <a href="./index.html" class="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 ">
+                            Dashboard
+                        </a>
+                    </li>
+                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                <span class="text-sm font-medium">Menu Karyawan</span>
+                                <span class="shrink-0 transition duration-300 group-open:-rotate-180"><i class="bx bx-chevron-down"></i></span>
+                            </summary>
+                            <ul class="mt-2 space-y-1 px-4">
+                                <li><a href="./karyawan.html" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Karyawan</a></li>
+                                <li><a href="./Jabatan.html" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Jabatan</a></li>
+                                <li><a href="./Divisi.html" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Divisi</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                <span class="text-sm font-medium">Menu Absensi</span>
+                                <span class="shrink-0 transition duration-300 group-open:-rotate-180"><i class="bx bx-chevron-down"></i></span>
+                            </summary>
+                            <ul class="mt-2 space-y-1 px-4">
+                                <li><a href="./Absensi.html" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Absensi</a></li>
+                                <li><a href="./Izin.html" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Izin</a></li>
+                                <li><a href="./Lembur.html" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Lembur</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                <span class="text-sm font-medium">Menu Penggajian</span>
+                                <span class="shrink-0 transition duration-300 group-open:-rotate-180"><i class="bx bx-chevron-down"></i></span>
+                            </summary>
+                            <ul class="mt-2 space-y-1 px-4">
+                                <li><a href="#" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Slip Gaji</a></li>
+                                <li><a href="#" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Cetak Slip Gaji</a></li>
+                                
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                <span class="text-sm font-medium">Menu Laporan</span>
+                                <span class="shrink-0 transition duration-300 group-open:-rotate-180"><i class="bx bx-chevron-down"></i></span>
+                            </summary>
+                            <ul class="mt-2 space-y-1 px-4">
+                                <li><a href="#" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Cetak Laporan</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+                            <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                                <span class="text-sm font-medium">Menu Admin</span>
+                                <span class="shrink-0 transition duration-300 group-open:-rotate-180"><i class="bx bx-chevron-down"></i></span>
+                            </summary>
+                            <ul class="mt-2 space-y-1 px-4">
+                                <li><a href="#" class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">Pengguna</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+            <button class="bg-pink-500 w-[100%] px-4 py-2 mt-5">Logout</button>
+        </div>
+
+        <!-- Main Content Section -->
+        <section class="col-start-3 col-end-13">
+            <!-- Header -->
+            <div class="bg-pink-500 h-[20vh] px-10 flex items-center rounded-md shadow-md">
+                <div class="bg-pink-500 h-[20vh] px-2 flex items-center ">
+                    <h1 class="text-2xl text-white font-bold">Forms</h1>
+                </div>
+            </div>
+
+            <!-- Job Position Form Section -->
+            <div class="container mx-auto p-5">
+                <h2 class="text-2xl font-semibold mb-5">Tambah Data Jabatan</h2>
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <form>
+                        <div class="grid grid-cols-1 gap-4">
+                            <!-- Nama Jabatan -->
+                            <div>
+                                <label for="nama_jabatan" class="block text-sm font-medium text-gray-700">Nama Jabatan</label>
+                                <input type="text" id="nama_jabatan" name="nama_jabatan" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-pink-200" placeholder="Masukkan nama jabatan" required>
+                            </div>
+
+                            <!-- Tugas Pokok -->
+                            <div>
+                                <label for="tugas_pokok" class="block text-sm font-medium text-gray-700">Tugas Pokok</label>
+                                <textarea id="tugas_pokok" name="tugas_pokok" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-pink-200" placeholder="Deskripsikan tugas pokok" required></textarea>
+                            </div>
+            
+                            <!-- Kualifikasi Pendidikan -->
+                            <div>
+                                <label for="kualifikasi_pendidikan" class="block text-sm font-medium text-gray-700">Kualifikasi Pendidikan</label>
+                                <input type="text" id="kualifikasi_pendidikan" name="kualifikasi_pendidikan" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-pink-200" placeholder="Masukkan kualifikasi pendidikan" required>
+                            </div>
+                            
+                            <!-- Pengalaman Kerja (Tahun) -->
+                            <div>
+                                <label for="pengalaman_kerja" class="block text-sm font-medium text-gray-700">Pengalaman Kerja (Tahun)</label>
+                                <input type="number" id="pengalaman_kerja" name="pengalaman_kerja" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-pink-200" placeholder="Masukkan jumlah tahun pengalaman" required>
+                            </div>
+
+                            <!-- Divisi -->
+                            <div>
+                                <label for="divisi" class="block text-sm font-medium text-gray-700">Divisi</label>
+                                <select id="divisi" name="divisi" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-pink-200" required>
+                                    <option value="">---</option>
+                                    <option value="keuangan">Keuangan</option>
+                                    <option value="sdm">SDM</option>
+                                    <option value="pemasaran">Pemasaran</option>
+                                    <!-- Add other divisions as needed -->
+                                </select>
+                            </div>
+
+                            <!-- Button Group -->
+                            <div class="flex justify-end">
+                                <button type="submit" class="mt-4 ml-4 bg-blue-500 text-white px-4 py-2 rounded-md transition-transform duration-300 transform hover:scale-105 active:scale-95 hover:shadow-lg">Simpan</button>
+                                <button type="button" class="mt-4 ml-4 bg-red-500 text-white px-4 py-2 rounded-md transition-transform duration-300 transform hover:scale-105 active:scale-95 hover:shadow-lg">Batal</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
